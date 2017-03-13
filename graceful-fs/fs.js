@@ -1,6 +1,11 @@
 'use strict'
 
-var fs = require('original-fs')
+var fs;
+if(process.type){
+    fs = require('original-fs');
+}else{
+    fs = require('fs')
+}
 
 module.exports = clone(fs)
 
