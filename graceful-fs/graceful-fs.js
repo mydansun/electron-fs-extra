@@ -1,4 +1,10 @@
-var fs = require('fs')
+var fs
+if("type" in process){
+    fs = require('original-fs')
+}else{
+    fs = require('fs')
+}
+
 var polyfills = require('./polyfills.js')
 var legacy = require('./legacy-streams.js')
 var queue = []
