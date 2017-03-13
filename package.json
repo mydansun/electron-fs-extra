@@ -1,5 +1,5 @@
 {
-  "name": "fs-extra",
+  "name": "original-fs-extra",
   "author": "mydansun@gmail.com",
   "dependencies": {
     "jsonfile": "^2.1.0"
