@@ -1,8 +1,8 @@
 'use strict'
 
-var fs;
+var fs
 if("type" in process){
-    fs = require('original-fs');
+    fs = require('original-fs')
 }else{
     fs = require('fs')
 }
